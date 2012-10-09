@@ -164,9 +164,9 @@ script "setup ultrasphinx for Gitorious" do
     cp vendor/plugins/ultrasphinx/examples/ap.multi /usr/lib/aspell/
     bundle exec rake ultrasphinx:spelling:build
 
-    chown git:git config/ultrasphinx/production.conf
+    chown git:git config/ultrasphinx/default.base
   }
-  creates     "#{deploy_path}/config/ultrasphinx/production.conf"
+  creates     "#{deploy_path}/config/ultrasphinx/default.base"
   notifies    :restart, "service[apache2]"
 end
 
