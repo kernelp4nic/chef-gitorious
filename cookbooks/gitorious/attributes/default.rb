@@ -1,0 +1,17 @@
+default[:gitorious][:storage_dir]          = '/var/git'
+default[:gitorious][:deploy_path]          = '/var/www/gitorious'
+default[:gitorious][:host]                 = 'gitorious.inconcert'
+default[:gitorious][:git][:url]            = "git://gitorious.org/gitorious/mainline.git"
+default[:gitorious][:git][:reference]      = "master"
+default[:gitorious][:support_email]        = "smoreno@inconcertcc.com"
+default[:gitorious][:notification_emails]  = "smoreno@inconcertcc.com"
+default[:gitorious][:public_mode]          = "false"
+default[:gitorious][:locale]               = "en"
+default[:gitorious][:only_admin_create]    = "false"
+default[:gitorious][:hide_http_clone_urls] = "false"
+default[:gitorious][:db][:host]            = "localhost"
+default[:gitorious][:db][:database]        = "gitorious"
+default[:gitorious][:db][:user]            = "gitorious"
+default[:gitorious][:db][:password]        = "gitorious"
+default[:gitorious][:admin][:email]        = "smoreno@inconcertcc.com"
+default[:gitorious][:admin][:password]     = "password"

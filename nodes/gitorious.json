@@ -1,0 +1,36 @@
+{
+  "passenger": { "version": "3.0.7" },
+  "gitorious": {
+    "host": "gitorious.inconcert",
+    "git": {
+      "url": "git://gitorious.org/gitorious/mainline.git",
+      "reference": "v2.1.0"
+    },  
+    "db": {
+      "user": "gitorious",
+      "host": "localhost",
+      "database": "gitorious",
+      "password": "password"
+    },  
+    "hide_http_clone_urls": "false",
+    "locale": "en",
+    "support_email": "smoreno@inconcertcc.com",
+    "notification_emails": "smoreno@inconcertcc.com",
+    "public_mode": "false",
+    "only_admins_create": "false",
+    "admin": {
+      "email": "smoreno@inconcertcc.com",
+      "password": "password"
+    }
+  },  
+  "smtp": {
+    "address": "mail.inconcertcc.com",
+    "port": "25",
+    "username": "gitorious@inconcertcc.com",
+    "password": "password",
+    "default_sender": "gitorious@inconcertcc.com"
+  },
+  "run_list": [ "recipe[vim]", "recipe[custom_environment]", "recipe[ntpdate]", "recipe[smtp]", "recipe[gitorious]" ]
+}
+
+
