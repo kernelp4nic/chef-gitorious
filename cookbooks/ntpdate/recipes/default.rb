@@ -1,2 +1,3 @@
-execute("ntpdate-debian"){ action :nothing }
-package("ntpdate"){ notifies :run, "execute[ntpdate-debian]" }
+package "ntpdate" do
+	action :install
+end
